@@ -1,0 +1,33 @@
+{
+  "name": "trae-wabot",
+  "version": "1.0.0",
+  "description": "A simple WhatsApp bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/monitor.js dist/index.js",
+    "dev": "node -r ts-node/register src/monitor.ts src/index.ts",
+    "newdev": "node -r ts-node/register src/monitor.ts src/index.enhanced.ts"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "chalk": "^5.4.1",
+    "pino": "^9.6.0",
+    "qrcode-terminal": "^0.12.0",
+    "tree-kill": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
